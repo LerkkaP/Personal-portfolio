@@ -1,7 +1,10 @@
+import Hero from "./components/Hero";
+
 const App = () => {
   return (
     <div>
-      <h1 className="text-white font-montserrat">Hello world</h1>
+      <Hero />
+      <h1 className="relative text-white font-montserrat">Hello world</h1>
     </div>
   );
 };
