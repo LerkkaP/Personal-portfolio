@@ -32,28 +32,36 @@ const NavBar = () => {
         <div className="hidden w-full md:flex md:w-auto" id="navbar-default">
           <NavLink
             to="/"
-            className="py-4 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-4 dark:text-white md:dark:text-blue-500"
+            className={
+              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
+            }
           >
             Home
           </NavLink>
 
           <NavLink
             to="/about"
-            className="py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            className={
+              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
+            }
           >
             About
           </NavLink>
 
           <NavLink
             to="/projects"
-            className="py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            className={
+              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
+            }
           >
             Projects
           </NavLink>
 
           <NavLink
             to="/contact"
-            className="py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            className={
+              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
+            }
           >
             Contact
           </NavLink>
