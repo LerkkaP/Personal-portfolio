@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -11,6 +12,7 @@ const App = () => {
     <div>
       <Hero />
       <NavBar />
+      <Footer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
