@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+/*import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
@@ -7,7 +8,7 @@ const NavBar = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -29,43 +30,128 @@ const NavBar = () => {
           </svg>
         </button>
 
-        <div className="hidden w-full md:flex md:w-auto" id="navbar-default">
-          <NavLink
-            to="/"
-            className={
-              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
-            }
-          >
-            Home
-          </NavLink>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delayChildren: 0.2,
+                staggerChildren: 0.1,
+              },
+            },
+          }}
+        >
+          <div className="hidden w-full md:flex md:w-auto" id="navbar-default">
+            {["/", "/about", "/projects", "/contact"].map((path) => (
+              <motion.div
+                key={path}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                <NavLink
+                  to={path}
+                  className={
+                    "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent decoration-sky-700"
+                  }
+                >
+                  {path === "/"
+                    ? "Home"
+                    : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+                </NavLink>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </nav>
+  );
+};
 
-          <NavLink
-            to="/about"
-            className={
-              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
-            }
-          >
-            About
-          </NavLink>
+export default NavBar;*/
 
-          <NavLink
-            to="/projects"
-            className={
-              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
-            }
-          >
-            Projects
-          </NavLink>
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
-          <NavLink
-            to="/contact"
-            className={
-              "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-4 dark:text-white md:dark:hover:underline underline-offset-8 dark:hover:bg-gray-700  dark:hover:text-white md:dark:hover:bg-transparent"
-            }
+const NavBar = () => {
+  return (
+    <nav className="relative">
+      <div className="max-w-screen-xl flex items-center justify-end mx-auto p-4">
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
           >
-            Contact
-          </NavLink>
-        </div>
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delayChildren: 0.2,
+                staggerChildren: 0.1,
+              },
+            },
+          }}
+        >
+          <div className="hidden w-full md:flex md:w-auto" id="navbar-default">
+            {["/", "/about", "/projects", "/contact"].map((path) => (
+              <motion.div
+                key={path}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                <NavLink
+                  to={path}
+                  className={
+                    "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-4 group  transition duration-300 relative group"
+                  }
+                >
+                  {path === "/"
+                    ? "Home"
+                    : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-700 transition-all group-hover:w-full"></span>
+                </NavLink>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </nav>
   );

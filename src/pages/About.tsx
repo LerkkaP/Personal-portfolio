@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+/*import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -19,10 +19,20 @@ const About = () => {
         },
       }}
     >
-      <div className="relative h-screen flex items-center justify-center text-white">
+      <div className=" h-screen flex items-center justify-center text-white">
         <div className="absolute top-1/4 text-4xl">About</div>
       </div>
     </motion.div>
+  );
+};
+
+export default About;*/
+
+const About = () => {
+  return (
+    <div className=" h-screen flex items-center justify-center text-white">
+      <div className="absolute top-1/4 text-4xl">About</div>
+    </div>
   );
 };
 

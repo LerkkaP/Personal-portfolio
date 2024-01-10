@@ -1,12 +1,12 @@
 const Hero = () => {
   return (
-    <div>
+    <header>
       <img
-        className="h-3/4 w-full absolute top-0 left-0"
+        className="absolute inset-0 object-cover "
         src="src/assets/portfolio_banner.png"
         alt="hero image"
       />{" "}
-    </div>
+    </header>
   );
 };
 

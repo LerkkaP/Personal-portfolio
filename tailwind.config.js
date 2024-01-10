@@ -7,7 +7,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        "secondary-color": "var(--secondary-color)"
+        "secondary-color": "var(--secondary-color)",
       },
     },
   },

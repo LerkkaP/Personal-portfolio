@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 :root {
-    --secondary-color: #15264B;
-  }
+  --secondary-color: #15264b;
+  --link-color: #4467c4;
+}

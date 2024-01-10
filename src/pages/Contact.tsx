@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+/*import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -19,10 +19,20 @@ const Contact = () => {
         },
       }}
     >
-      <div className="relative h-screen flex items-center justify-center text-white">
+      <div className=" h-screen flex items-center justify-center text-white">
         <div className="absolute top-1/4 text-4xl">Contact</div>
       </div>
     </motion.div>
+  );
+};
+
+export default Contact;*/
+
+const Contact = () => {
+  return (
+    <div className=" h-screen flex items-center justify-center text-white">
+      <div className="absolute top-1/4 text-4xl">Contact</div>
+    </div>
   );
 };
 
