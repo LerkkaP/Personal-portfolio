@@ -1,15 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import Hero from "./components/Hero";
-import NavBar from "./components/Navbar";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Content from "./components/Content";
+
 
 const App = () => {
   return (
     <div>
+<<<<<<< HEAD
       <Hero />
       <NavBar />
       <Routes>
@@ -19,6 +16,13 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+=======
+      <div className="flex flex-col h-screen">
+        <Header />
+        <Content />
+        <Footer />
+      </div>
+>>>>>>> 8a841413ffe95caf7914fd793975c57657f10453
     </div>
   );
 };
