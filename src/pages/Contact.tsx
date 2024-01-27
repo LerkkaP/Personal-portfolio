@@ -28,13 +28,13 @@ const Contact = () => {
 
 export default Contact;*/
 
-import ContactForm from "../components/ContactForm";
+import Form from "../components/form/Form";
 
 const Contact = () => {
   return (
     <div className=" h-screen flex items-center justify-center text-white">
       <div className="absolute top-1/4 text-4xl">Contact</div>
-      <ContactForm />
+      <Form />
     </div>
   );
 };
