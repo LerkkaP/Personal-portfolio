@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
-    <nav className="relative">
-      <div className="max-w-screen-xl flex items-center justify-end mx-auto p-4">
+    <nav className="relative py-8">
+      <div className="max-w-screen-xl flex items-center justify-center mx-auto">
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -49,7 +49,7 @@ const NavBar = () => {
           }}
         >
           <div className="hidden w-full md:flex md:w-auto" id="navbar-default">
-            {["/", "/about", "/projects", "/contact"].map((path) => (
+            {["/", "/projects", "/contact"].map((path) => (
               <motion.div
                 key={path}
                 variants={{
@@ -60,7 +60,7 @@ const NavBar = () => {
                 <NavLink
                   to={path}
                   className={
-                    "py-4 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-4 group  transition duration-300 relative group"
+                    " px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-4 group  transition duration-300 relative group"
                   }
                 >
                   {path === "/"

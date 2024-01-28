@@ -1,28 +1,22 @@
-import { TextField } from "@mui/material";
 import Input from "./Input";
 
 const Form = () => {
   return (
     <div>
       <form className="flex flex-col w-96">
-        <Input label="Name" variant="standard" />
-        <Input label="Email" variant="standard" />
-        <TextField
+        <Input label="Name" sx={{ paddingBottom: 4 }} />
+        <Input label="email" />
+        <Input
           placeholder="Write a message..."
           multiline
           rows={5}
           maxRows={10}
-          InputProps={{
-            style: {
-              border: "1px solid #f5f5f5",
-            },
-          }}
           sx={{
             paddingTop: 4,
             paddingBottom: 4,
           }}
         />
-        <button className="bg-white-text text-black p-2 rounded">Lähetä</button>
+        <button className="bg-white text-black p-2 rounded">Send</button>
       </form>
     </div>
   );

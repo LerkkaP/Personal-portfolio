@@ -5,16 +5,25 @@ const Input = styled(TextField)({
   "& label.Mui-focused": {
     color: "#f5f5f5",
   },
-  "& .MuiInput-underline:after": {
-    borderBottomColor: "#f5f5f5",
+  "& .MuiOutlinedInput-root": {
+    "&.Mui-focused fieldset": {
+      borderColor: "white",
+    },
+    "&:hover fieldset": {
+      borderColor: "white",
+    },
   },
-
+  "& .MuiOutlinedInput-notchedOutline": {
+    borderColor: "grey",
+  },
   "& label": {
     color: "#f5f5f5",
   },
   "& input": {
     color: "#f5f5f5",
-    borderBottom: "1px solid white",
+  },
+  "& .MuiInputBase-multiline": {
+    color: "#f5f5f5",
   },
 });
 
