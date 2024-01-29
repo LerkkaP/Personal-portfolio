@@ -66,7 +66,7 @@ const NavBar = () => {
                   {path === "/"
                     ? "Home"
                     : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
-                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-700 transition-all group-hover:w-full"></span>
+                  <span className="absolute bottom-1 left-0 w-0 h-px bg-blue-700 transition-all group-hover:w-full"></span>
                 </NavLink>
               </motion.div>
             ))}

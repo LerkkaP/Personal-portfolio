@@ -9,7 +9,6 @@ const Footer = () => {
             whileHover={{ scale: 1.2 }}
             href="https://github.com/LerkkaP"
           >
-            {" "}
             <img
               src="src/assets/github.svg"
               alt="GitHub"
