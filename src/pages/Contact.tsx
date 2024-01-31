@@ -32,8 +32,7 @@ import Form from "../components/form/Form";
 
 const Contact = () => {
   return (
-    <div className=" h-screen flex items-center justify-center text-white">
-      <div className="absolute top-1/4 text-4xl">Contact</div>
+    <div className="h-screen flex items-center justify-center text-white">
       <Form />
     </div>
   );

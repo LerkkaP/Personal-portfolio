@@ -31,7 +31,7 @@ export default Projects;*/
 const Projects = () => {
   return (
     <div className="h-screen flex items-center justify-center text-white">
-      <div className="absolute top-1/4 text-4xl">Projects</div>
+      <div className="text-4xl">Projects</div>
     </div>
   );
 };

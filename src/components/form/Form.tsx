@@ -3,6 +3,7 @@ import Input from "./Input";
 const Form = () => {
   return (
     <div>
+      <h2 className="text-4xl mb-20">Contact</h2>
       <form className="flex flex-col w-96">
         <Input label="Name" sx={{ paddingBottom: 4 }} />
         <Input label="email" />
