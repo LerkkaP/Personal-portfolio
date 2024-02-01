@@ -1,10 +1,9 @@
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link} from 'react-scroll'
 
 const NavBar = () => {
   return (
-    <nav className="relative py-8">
-      <div className="">
+    <nav className="fixed top-0 left-0 right-0 p-8">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -23,8 +22,8 @@ const NavBar = () => {
             },
           }}
         >
-          <div className="flex justify-evenly" id="navbar-default">
-            {["/", "/projects", "/contact"].map((path) => (
+          <div className="flex justify-end">
+            {["about", "projects", "contact"].map((path) => (
               <motion.div
                 key={path}
                 variants={{
@@ -32,22 +31,12 @@ const NavBar = () => {
                   visible: { opacity: 1, x: 0 },
                 }}
               >
-                <NavLink
-                  to={path}
-                  className={
-                    "mx-25 text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-200 after:origin-center"
-                  }
-                >
-                  {path === "/"
-                    ? "About"
-                    : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
-                </NavLink>
+                <Link activeClass="active" className="text-white text-lg mx-6 text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-200 after:origin-center cursor-pointer" to={path} spy={true} smooth={true} duration={800}>{path.charAt(0).toUpperCase() + path.slice(1)}</Link>
               </motion.div>
             ))}
-
           </div>
         </motion.div>
-      </div>
+        
     </nav>
   );
 };

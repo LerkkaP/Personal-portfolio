@@ -29,12 +29,13 @@ const Contact = () => {
 export default Contact;*/
 
 import Form from "../components/form/Form";
+import { Element } from "react-scroll";
 
 const Contact = () => {
   return (
-    <div className="h-screen flex items-center justify-center text-white">
+    <Element name="contact" className="h-screen flex items-center justify-center text-white">
       <Form />
-    </div>
+    </Element>
   );
 };
 

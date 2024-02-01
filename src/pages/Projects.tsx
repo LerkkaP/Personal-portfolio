@@ -27,11 +27,12 @@ const Projects = () => {
 };
 
 export default Projects;*/
+import { Element } from "react-scroll";
 
 const Projects = () => {
   return (
     <div className="h-screen flex items-center justify-center text-white">
-      <div className="text-4xl">Projects</div>
+      <Element name="projects" className="text-4xl">Projects</Element>
     </div>
   );
 };
