@@ -27,13 +27,24 @@ const Projects = () => {
 };
 
 export default Projects;*/
+
+
+
 import { Element } from "react-scroll";
+import Card from "../components/Card";
 
 const Projects = () => {
   return (
-    <div className="h-screen flex items-center justify-center text-white">
-      <Element name="projects" className="text-4xl">Projects</Element>
+    <div>
+    <Element name="projects" className="text-4xl text-white">Projects</Element>
+
+    <div className="h-screen flex flex-wrap items-center justify-center text-white">
+      <Card />
+      <Card />
+      <Card />
     </div>
+    </div>
+
   );
 };
 
