@@ -4,3 +4,4 @@ export interface Project {
     description: string,
     stack: string[]
 }
+ 

@@ -40,9 +40,25 @@ const Projects = () => {
         animate={control}
         variants={cardVariant}
         className="h-screen flex flex-wrap items-center justify-center text-white">
-          <Card />
-          <Card />
-          <Card />
+          <Card
+            title="Flappy Bird"
+            url="https://github.com/LerkkaP/flappy-bird"
+            description="testi"
+            stack={["Python", "Pygame", "Matplotlib", "TinyDB"]}
+            />
+            
+          <Card 
+            title="Ecommerce Flask"
+            url="https://github.com/LerkkaP/ecommerce-flask"
+            description="testi2"
+            stack={["Python", "Flask", "Javascript", "Html", "CSS", "PostgreSQL"]}
+          />
+          <Card
+            title="Workout tracker"
+            url="https://github.com/LerkkaP/workout-tracker"
+            description="testi3"
+            stack={["React", "Javascript", "MongoDB", "REST"]}
+          />
       </motion.div>
     </div>
 
