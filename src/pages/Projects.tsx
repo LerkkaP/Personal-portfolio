@@ -6,19 +6,16 @@ import { useEffect } from "react";
 import Card from "../components/Card";
 
 const cardVariant = {
-  hidden: {
-    y: 0,
-    opacity: 0,
-  },
   visible: {
+    x: 0,
     y: 0,
     opacity: 1,
     transition: {
-      ease: "ease",
+      ease: "backOut",
       duration: 1.5,
-      delay: 0.3,
+      delay: 0.5,
     },
-  },
+  }
 }
 
 const Projects = () => {
@@ -36,7 +33,7 @@ const Projects = () => {
       <Element name="projects" className="text-4xl text-white">Projects</Element>
       <motion.div 
         ref={ref}
-        initial="hidden"
+        initial={{ y: 100, opacity: 0 }}
         animate={control}
         variants={cardVariant}
         className="h-screen flex flex-wrap items-center justify-center text-white">
