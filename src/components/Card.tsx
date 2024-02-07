@@ -23,7 +23,7 @@ const Card = () => {
                     <button className='absolute bottom-2 right-2' onClick={handleFlip}><FlipToBackIcon color='primary'/></button>                
                 </div>
                 </div>
-                <div className="absolute inset-0 h-full w-full px-12 text-center text-slate-200 back">
+                <div className="flex items-center justify-center h-full text-slate-200 back">
                     <div className="px-6 py-8">
                             <span className="inline-block bg-gray-200 rounded-sm px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
                             <span className="inline-block bg-gray-200 rounded-sm px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pygame</span>
