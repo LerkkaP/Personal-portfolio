@@ -24,12 +24,13 @@
 }
 
 .shadow-blue {
-  box-shadow: 0 26px 58px 0 rgba(66, 153, 225, 0.2), 0 5px 14px 0 rgba(66, 153, 225, 0.2);
+  box-shadow: 0 26px 58px 0 rgba(66, 153, 225, 0.2),
+    0 5px 14px 0 rgba(66, 153, 225, 0.2);
   transition: all 1s ease;
 }
 
 .shadow-white {
-  box-shadow: 0 26px 58px 0 rgba(255, 255, 255, 0.2), 0 5px 14px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 26px 58px 0 rgba(255, 255, 255, 0.2),
+    0 5px 14px 0 rgba(255, 255, 255, 0.2);
   transition: all 1s ease;
 }
-
