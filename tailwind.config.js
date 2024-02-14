@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         "secondary-color": "var(--secondary-color)",
-      },
+      }
     },
   },
   plugins: [],

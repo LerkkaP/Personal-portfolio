@@ -36,6 +36,7 @@ const Form = () => {
           sx={{ paddingBottom: 4 }}
         />
         <Input
+          variant="outlined"
           label="email"
           name="email"
           value={data.email}
