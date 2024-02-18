@@ -94,7 +94,7 @@ const Form = () => {
           />
           <Input
             {...register("email")}
-            label="Email*"
+            label="Email *"
             error={!!errors.email && focusedField !== "email"}
             helperText={
               errors.email &&
