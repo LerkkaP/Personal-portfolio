@@ -7,6 +7,9 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      blur: {
+        sm: '3px'
+      },
       colors: {
         "secondary-color": "var(--secondary-color)",
       }

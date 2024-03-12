@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 p-8 z-10 ${scrolled ? 'bg-black' : 'bg-transparent'}`}>
       <motion.div
-        initial="hidden"
+        initial="hidden" 
         animate="visible"
         variants={{
           hidden: {
@@ -38,7 +38,7 @@ const NavBar = () => {
           },
         }}
       >
-        <div className="flex justify-end">
+        <div className="flex justify-center space-x-4">
           {["about", "projects", "contact"].map((path) => (
             <motion.div
               key={path}
@@ -49,7 +49,7 @@ const NavBar = () => {
             >
               <Link
                 activeClass="active"
-                className="text-white text-lg mx-6 text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-200 after:origin-center cursor-pointer"
+                className="text-white text-2xl mx-6 text-white  relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-200 after:origin-center cursor-pointer"
                 to={path}
                 spy={true}
                 smooth={true}
